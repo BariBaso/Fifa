@@ -34,6 +34,7 @@ namespace Fifa
             Console.WriteLine($"6. feladat: A capatok között {(csapatok.Any(v => v.Csapat == "Magyarország") ? "van" : "nincs")} Magyarország");
             //7.
             Dictionary<int, int> statisztika = new Dictionary<int, int>();
+            Console.WriteLine("7. feladat: Satatisztika:");
             foreach (var c in csapatok)
             {
                 if (statisztika.ContainsKey(c.Valtozas))
@@ -49,7 +50,7 @@ namespace Fifa
             {
                 if (x.Value>1)
                 {
-                    Console.WriteLine($"{x.Key}helyezés változott: {x.Value}");
+                    Console.WriteLine($"\t{x.Key}helyezés változott: {x.Value}");
                 }
             }
 
